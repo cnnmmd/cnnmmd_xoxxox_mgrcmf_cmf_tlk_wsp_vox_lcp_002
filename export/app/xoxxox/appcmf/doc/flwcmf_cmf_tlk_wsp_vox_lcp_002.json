@@ -1,0 +1,591 @@
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "revision": 0,
+  "last_node_id": 36,
+  "last_link_id": 66,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "Xoxxox_LogTxt",
+      "pos": [
+        690.13818359375,
+        583.4058227539062
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "txtreq",
+          "type": "STRING",
+          "link": 6
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "Xoxxox_LogTxt"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 7,
+      "type": "Xoxxox_GetTxt",
+      "pos": [
+        711.8326416015625,
+        416.383056640625
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "keydat",
+          "type": "STRING",
+          "link": 41
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            6
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Xoxxox_GetTxt"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 5,
+      "type": "PrimitiveInt",
+      "pos": [
+        -152.47930908203125,
+        116.57473754882812
+      ],
+      "size": [
+        315,
+        82
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            1
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PrimitiveInt"
+      },
+      "widgets_values": [
+        -819023678682897,
+        "randomize"
+      ]
+    },
+    {
+      "id": 35,
+      "type": "Xoxxox_RunFlw",
+      "pos": [
+        1611.954833984375,
+        226.30551147460938
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "link": 62
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "Xoxxox_RunFlw"
+      },
+      "widgets_values": [
+        5
+      ]
+    },
+    {
+      "id": 12,
+      "type": "Xoxxox_CnvDat",
+      "pos": [
+        538.760986328125,
+        74.40847778320312
+      ],
+      "size": [
+        315,
+        82
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "keydat",
+          "type": "STRING",
+          "link": 11
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            35
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Xoxxox_CnvDat"
+      },
+      "widgets_values": [
+        "xoxxox.CnvVce.webwav"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "Xoxxox_IniFlw",
+      "pos": [
+        -3.646446704864502,
+        -37.066741943359375
+      ],
+      "size": [
+        315,
+        58
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "random",
+          "type": "INT",
+          "link": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            8,
+            64
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Xoxxox_IniFlw"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 11,
+      "type": "Xoxxox_DlySet",
+      "pos": [
+        525.291748046875,
+        -185.40997314453125
+      ],
+      "size": [
+        315,
+        82
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "link": 66
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            11
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Xoxxox_DlySet"
+      },
+      "widgets_values": [
+        "000"
+      ]
+    },
+    {
+      "id": 36,
+      "type": "Xoxxox_SndVce",
+      "pos": [
+        212.9947967529297,
+        104.18685913085938
+      ],
+      "size": [
+        270,
+        130
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "link": 64
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            66
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Xoxxox_SndVce"
+      },
+      "widgets_values": [
+        "xoxxox_appmid_rem",
+        "/sps000",
+        0.1,
+        2000
+      ]
+    },
+    {
+      "id": 17,
+      "type": "Xoxxox_DlyGet",
+      "pos": [
+        1166.6585693359375,
+        167.87594604492188
+      ],
+      "size": [
+        315,
+        82
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "keydat",
+          "type": "STRING",
+          "link": 38
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            60
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Xoxxox_DlyGet"
+      },
+      "widgets_values": [
+        "000"
+      ]
+    },
+    {
+      "id": 24,
+      "type": "Xoxxox_CnvTxt",
+      "pos": [
+        898.98486328125,
+        -93.82136535644531
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "keydat",
+          "type": "STRING",
+          "link": 35
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            39,
+            41
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Xoxxox_CnvTxt"
+      },
+      "widgets_values": [
+        "xoxxox_sttwsp",
+        "xoxxox/config_sttwsp_000"
+      ]
+    },
+    {
+      "id": 26,
+      "type": "Xoxxox_GenTxt",
+      "pos": [
+        733.6426391601562,
+        222.81411743164062
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "keydat",
+          "type": "STRING",
+          "link": 39
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            40
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Xoxxox_GenTxt"
+      },
+      "widgets_values": [
+        "xoxxox_tttlcp",
+        "xoxxox/config_tttlcp_002"
+      ]
+    },
+    {
+      "id": 25,
+      "type": "Xoxxox_CnvVce",
+      "pos": [
+        1274.6666259765625,
+        -42.00756072998047
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "keydat",
+          "type": "STRING",
+          "link": 40
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            38
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Xoxxox_CnvVce"
+      },
+      "widgets_values": [
+        "xoxxox_ttsvox",
+        "xoxxox/config_ttsvox_052"
+      ]
+    },
+    {
+      "id": 34,
+      "type": "Xoxxox_SwtImg",
+      "pos": [
+        1185.605712890625,
+        352.2716064453125
+      ],
+      "size": [
+        270,
+        298
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "string",
+          "type": "STRING",
+          "link": 60
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            62
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Xoxxox_SwtImg"
+      },
+      "widgets_values": [
+        "xoxxox_appmid_rem",
+        "xoxxox_appweb_rem",
+        "/gpp000",
+        0.05,
+        "",
+        "/xoxxox/img/<c>_<m>.png",
+        "imgchr_004_bcn",
+        "r",
+        0.4,
+        0.2,
+        0
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      5,
+      0,
+      4,
+      0,
+      "INT"
+    ],
+    [
+      6,
+      7,
+      0,
+      1,
+      0,
+      "STRING"
+    ],
+    [
+      11,
+      11,
+      0,
+      12,
+      0,
+      "STRING"
+    ],
+    [
+      35,
+      12,
+      0,
+      24,
+      0,
+      "STRING"
+    ],
+    [
+      38,
+      25,
+      0,
+      17,
+      0,
+      "STRING"
+    ],
+    [
+      39,
+      24,
+      0,
+      26,
+      0,
+      "STRING"
+    ],
+    [
+      40,
+      26,
+      0,
+      25,
+      0,
+      "STRING"
+    ],
+    [
+      41,
+      24,
+      0,
+      7,
+      0,
+      "STRING"
+    ],
+    [
+      60,
+      17,
+      0,
+      34,
+      0,
+      "STRING"
+    ],
+    [
+      62,
+      34,
+      0,
+      35,
+      0,
+      "STRING"
+    ],
+    [
+      64,
+      4,
+      0,
+      36,
+      0,
+      "STRING"
+    ],
+    [
+      66,
+      36,
+      0,
+      11,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.620921323059155,
+      "offset": [
+        -2.777696097354179,
+        261.41092705282693
+      ]
+    },
+    "frontendVersion": "1.18.6"
+  },
+  "version": 0.4
+}
